@@ -4,6 +4,7 @@
 
 `type-diff` is a library to diff two strings, useful for showing for typing games (like [monkeytype](https://monkeytype.com/)) or for showing differences between two strings. It is a simple library that is easy to use and has no dependencies. It is also very fast and lightweight.
 
+Check out a demo at [typer-diff.shivi.io](https://typer-diff.shivi.io/).
 ## Usage
 
 **Usage:**

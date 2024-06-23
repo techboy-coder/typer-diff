@@ -8,4 +8,4 @@
 
 This is a simple Next.js app that uses the `typer-diff` library to show an input field where you can type and see the diff between the original text and the typed text. (Similar to typing games like [monkeytype](https://monkeytype.com/)).
 
-Check out the [demo](https://typer-diff.vercel.app/).
+Check out a demo at [typer-diff.shivi.io](https://typer-diff.shivi.io/).
