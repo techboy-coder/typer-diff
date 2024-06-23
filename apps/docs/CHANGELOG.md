@@ -1,5 +1,12 @@
 # docs
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies [96c815e]
+  - typer-diff@1.0.3
+
 ## 0.1.5
 
 ### Patch Changes
