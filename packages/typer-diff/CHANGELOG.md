@@ -1,5 +1,15 @@
 # typer-diff
 
+## 1.0.0
+
+### Major Changes
+
+- acd8403: Docs more or less ready
+
+### Patch Changes
+
+- e8ea4db: try adding web docs
+
 ## 0.2.0
 
 ### Minor Changes

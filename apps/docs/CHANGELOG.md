@@ -1,5 +1,13 @@
 # docs
 
+## 0.1.3
+
+### Patch Changes
+
+- Updated dependencies [e8ea4db]
+- Updated dependencies [acd8403]
+  - typer-diff@1.0.0
+
 ## 0.1.2
 
 ### Patch Changes
