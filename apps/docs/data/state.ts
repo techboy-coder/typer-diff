@@ -14,8 +14,10 @@ export const diffText = atom((get) => {
 });
 
 export const allowModifications = atom((get) => {
-    const diff = get(diffText);
-    return !diff.end;
+    // incase you want to stop modifications (e.g. when the user has finished typing)
+    // const diff = get(diffText);
+    // return !diff.end;
+    return true;
 });
 
 export const isTyping = atom(true);
