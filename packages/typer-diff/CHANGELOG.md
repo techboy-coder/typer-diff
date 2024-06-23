@@ -1,5 +1,11 @@
 # typer-diff
 
+## 1.0.1
+
+### Patch Changes
+
+- 515b678: update readme
+
 ## 1.0.0
 
 ### Major Changes
