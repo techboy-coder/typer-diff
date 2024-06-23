@@ -1,5 +1,11 @@
 # typer-diff
 
+## 1.0.3
+
+### Patch Changes
+
+- 96c815e: typo
+
 ## 1.0.2
 
 ### Patch Changes
