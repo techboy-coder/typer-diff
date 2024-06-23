@@ -16,7 +16,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`bg-black text-white font-mono container`}>
+            <body
+                className={`bg-black text-white font-mono h-screen overscroll-none`}>
                 {children}
             </body>
         </html>

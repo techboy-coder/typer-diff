@@ -1,7 +1,11 @@
+import DiffText from "./components/DiffText";
+import HiddenInput from "./components/HiddenInput";
+
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            Hello World
-        </main>
+        <div className="h-full leading-relaxed flex flex-col justify-center items-center">
+            <DiffText></DiffText>
+            <HiddenInput></HiddenInput>
+        </div>
     );
 }

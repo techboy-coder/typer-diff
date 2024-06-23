@@ -1,3 +1,3 @@
 # Typer Diff
 
-WIP
+![Typer Diff Demo](demo.png)

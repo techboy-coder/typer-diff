@@ -23,10 +23,10 @@ export const diff = (originalText: string, typedText: string): DiffResult => {
             }
             const correctWord = correctWords[i];
             const typedWord = typedWords[i];
-            if (!correctWord || !typedWord) {
+            if (!correctWord) {
                 continue;
             }
-            const wordDiff = diffWord(correctWord, typedWord);
+            const wordDiff = diffWord(correctWord, typedWord || "");
             diff.push(...wordDiff);
             diff.push({ value: " ", type: "spacer" });
         }
@@ -37,10 +37,10 @@ export const diff = (originalText: string, typedText: string): DiffResult => {
     // compare current word
     const correctWord = correctWords[currentWordIndex];
     const typedWord = typedWords[currentWordIndex];
-    if (!correctWord || !typedWord) {
+    if (!correctWord) {
         return { diff, end: false };
     }
-    const currentWordDiff = diffCurrentWord(correctWord, typedWord);
+    const currentWordDiff = diffCurrentWord(correctWord, typedWord || "");
     diff.push(...currentWordDiff);
 
     // words AFTER current word are untouched
@@ -71,10 +71,10 @@ const diffWord = (originalWord: string, typedWord: string) => {
         for (let i = 0; i < typedLength; i++) {
             let originalChar = originalWord[i];
             let typedChar = typedWord[i];
-            if (!originalChar || !typedChar) {
+            if (!originalChar) {
                 continue;
             }
-            diff.push(diffChar(originalChar, typedChar));
+            diff.push(diffChar(originalChar, typedChar || ""));
         }
         // the rest are missing
         for (let i = typedLength; i < correctLength; i++) {
@@ -92,18 +92,16 @@ const diffWord = (originalWord: string, typedWord: string) => {
         for (let i = 0; i < correctLength; i++) {
             let originalChar = originalWord[i];
             let typedChar = typedWord[i];
-            if (!originalChar || !typedChar) {
+            if (!originalChar) {
                 continue;
             }
-            diff.push(diffChar(originalChar, typedChar));
+            diff.push(diffChar(originalChar, typedChar || ""));
         }
         // the rest are extra
         for (let i = correctLength; i < typedLength; i++) {
             let typedChar = typedWord[i];
-            if (!typedChar) {
-                continue;
-            }
-            diff.push({ value: typedChar, type: "extra" });
+
+            diff.push({ value: typedChar || "", type: "extra" });
         }
     }
 
@@ -112,10 +110,10 @@ const diffWord = (originalWord: string, typedWord: string) => {
         for (let i = 0; i < correctLength; i++) {
             let originalChar = originalWord[i];
             let typedChar = typedWord[i];
-            if (!originalChar || !typedChar) {
+            if (!originalChar) {
                 continue;
             }
-            diff.push(diffChar(originalChar, typedChar));
+            diff.push(diffChar(originalChar, typedChar || ""));
         }
     }
 
@@ -140,10 +138,10 @@ const diffCurrentWord = (correctWord: string, typedWord: string) => {
         for (let i = 0; i < typedLength; i++) {
             let originalChar = correctWord[i];
             let typedChar = typedWord[i];
-            if (!originalChar || !typedChar) {
+            if (!originalChar) {
                 continue;
             }
-            diff.push(diffChar(originalChar, typedChar));
+            diff.push(diffChar(originalChar, typedChar || ""));
         }
         // the rest are untouched
         for (let i = typedLength; i < correctLength; i++) {
@@ -161,18 +159,15 @@ const diffCurrentWord = (correctWord: string, typedWord: string) => {
         for (let i = 0; i < correctLength; i++) {
             let originalChar = correctWord[i];
             let typedChar = typedWord[i];
-            if (!originalChar || !typedChar) {
+            if (!originalChar) {
                 continue;
             }
-            diff.push(diffChar(originalChar, typedChar));
+            diff.push(diffChar(originalChar, typedChar || ""));
         }
         // the rest are extra
         for (let i = correctLength; i < typedLength; i++) {
             let typedChar = typedWord[i];
-            if (!typedChar) {
-                continue;
-            }
-            diff.push({ value: typedChar, type: "extra" });
+            diff.push({ value: typedChar || "", type: "extra" });
         }
     }
 
@@ -181,10 +176,10 @@ const diffCurrentWord = (correctWord: string, typedWord: string) => {
         for (let i = 0; i < correctLength; i++) {
             let originalChar = correctWord[i];
             let typedChar = typedWord[i];
-            if (!originalChar || !typedChar) {
+            if (!originalChar) {
                 continue;
             }
-            diff.push(diffChar(originalChar, typedChar));
+            diff.push(diffChar(originalChar, typedChar || ""));
         }
     }
 
