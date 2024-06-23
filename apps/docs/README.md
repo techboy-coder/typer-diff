@@ -1,6 +1,6 @@
 # Typer Diff Demo App
 
-![Typer Diff Demo](https://raw.githubusercontent.com/techboy-coder/typer-diff/main/assets/demo.png?token=GHSAT0AAAAAACSUZ6AC33WMWGPI4HJ5X47KZTYIUYQ)
+![Typer Diff Demo](https://typer-diff.shivi.io/demo.png)
 
 `type-diff` is a library to diff two strings, useful for showing for typing games or for showing differences between two strings. It is a simple library that is easy to use and has no dependencies. It is also very fast and lightweight.
 
