@@ -18,6 +18,18 @@ export default function RootLayout({
         <html lang="en">
             <body
                 className={`bg-black text-white font-mono h-screen overscroll-none`}>
+                <nav className="flex justify-center items-center space-x-4 text-white/75 py-20">
+                    <a
+                        href="https://github.com/techboy-coder/typer-diff"
+                        target="_blank">
+                        github
+                    </a>
+                    <a
+                        href="https://npmjs.com/package/typer-diff"
+                        target="_blank">
+                        npm
+                    </a>
+                </nav>
                 {children}
             </body>
         </html>
