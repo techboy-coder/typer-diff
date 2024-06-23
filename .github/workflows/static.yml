@@ -1,0 +1,18 @@
+# serve static contents from the docs directory
+name: Static Pages
+on:
+    push:
+        branches:
+            - "main"
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 20.x
+            - run: npm install -g serve
+            - run: serve -s docs
+              env:
+                  CI: false
