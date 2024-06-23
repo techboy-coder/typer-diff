@@ -27,7 +27,7 @@
         "build": "tsup index.ts --format cjs,esm --dts --minify",
         "dev": "tsup index.ts --format cjs,esm --dts --watch",
         "lint": "tsc",
-        "release": "pnpm run build && pnpm test && pnpm run publish",
+        "release": "pnpm run build && pnpm test && pnpm publish",
         "test": "vitest"
     },
     "dependencies": {
