@@ -1,5 +1,5 @@
 ---
-"typer-diff": minor
+"typer-diff": patch
 ---
 
 test change
