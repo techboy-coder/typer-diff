@@ -27,12 +27,15 @@
         "build": "tsup index.ts --format cjs,esm --dts --minify",
         "dev": "tsup index.ts --format cjs,esm --dts --watch",
         "lint": "tsc",
-        "release": "pnpm run build && pnpm publish"
+        "release": "pnpm run build && pnpm test && pnpm run publish",
+        "test": "vitest"
     },
     "dependencies": {
         "typescript": "^5.5.2"
     },
     "devDependencies": {
-        "tsup": "^8.1.0"
+        "@vitest/coverage-v8": "^1.6.0",
+        "tsup": "^8.1.0",
+        "vitest": "^1.6.0"
     }
 }
