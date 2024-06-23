@@ -1,5 +1,11 @@
 # typer-diff
 
+## 1.0.2
+
+### Patch Changes
+
+- c3fa793: add tests
+
 ## 1.0.1
 
 ### Patch Changes
