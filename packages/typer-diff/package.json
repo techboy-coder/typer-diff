@@ -1,14 +1,14 @@
 {
     "name": "typer-diff",
     "license": "MIT",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsup index.ts --format cjs,esm --dts --minify",
         "lint": "tsc",
-        "release": "pnpm run build && pnpm version patch && pnpm publish"
+        "release": "pnpm run build && pnpm publish"
     },
     "dependencies": {
         "typescript": "^5.5.2"
