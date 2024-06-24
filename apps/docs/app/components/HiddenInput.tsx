@@ -33,6 +33,7 @@ export default function HiddenInput() {
             type="text"
             className="fixed -top-95 opacity-0"
             value={text.text}
+            id="hidden-input"
             onChange={(e) => {
                 if (allow) {
                     setText((text) => {

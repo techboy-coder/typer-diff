@@ -9,7 +9,7 @@
         "name": "Shivram Sambhus",
         "email": "shivi@shivi.io"
     },
-    "description": "type-diff is a library to diff two strings, useful for showing for typing games or for showing differences between two strings. It is a simple library that is easy to use and has no dependencies. It is also very fast and lightweight.",
+    "description": "typer-diff is a library to diff two strings, useful for showing for typing games or for showing differences between two strings. It is a simple library that is easy to use and has no dependencies. It is also very fast and lightweight.",
     "homepage": "http://typer-diff.shivi.io/",
     "bugs": "https://github.com/techboy-coder/typer-diff/issues",
     "repository": {
