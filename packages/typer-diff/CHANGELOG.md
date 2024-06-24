@@ -1,5 +1,11 @@
 # typer-diff
 
+## 1.1.1
+
+### Patch Changes
+
+- e216117: fix docs
+
 ## 1.1.0
 
 ### Minor Changes
