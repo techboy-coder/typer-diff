@@ -1,5 +1,0 @@
----
-"typer-diff": minor
----
-
-Docs
